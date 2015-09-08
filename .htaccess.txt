@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?csun.edu/~erk61308/webdrive.*$ [NC]
+RewriteRule \.$ http://www.foodle.com/ [R,L]
